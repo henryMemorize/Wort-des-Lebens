@@ -11,6 +11,9 @@
 		553E8E2D209751D9000CC8EE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E8E2C209751D9000CC8EE /* HomeVC.swift */; };
 		553E8E32209751DA000CC8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E8E31209751DA000CC8EE /* Assets.xcassets */; };
 		553E8E35209751DA000CC8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E8E33209751DA000CC8EE /* LaunchScreen.storyboard */; };
+		557F380E20A1F157008A8619 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F380D20A1F157008A8619 /* CalendarVC.swift */; };
+		55A8689420A4949500303F3A /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A8689320A4949500303F3A /* OverviewController.swift */; };
+		55A8689A20A4B07300303F3A /* SermonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A8689920A4B07300303F3A /* SermonsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		553E8E31209751DA000CC8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553E8E34209751DA000CC8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553E8E36209751DA000CC8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557F380D20A1F157008A8619 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		55A8689320A4949500303F3A /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		55A8689920A4B07300303F3A /* SermonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SermonsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,8 @@
 		553E8E29209751D9000CC8EE /* Wort des Lebens */ = {
 			isa = PBXGroup;
 			children = (
+				55A8689520A4AFFF00303F3A /* Sermons */,
+				557F380920A1F0E2008A8619 /* Calendar */,
 				553E8E3F2098E381000CC8EE /* Home */,
 				553E8E3E2098E360000CC8EE /* SupportFiles */,
 				553E8E36209751DA000CC8EE /* Info.plist */,
@@ -65,6 +73,7 @@
 				553E8E2A209751D9000CC8EE /* AppDelegate.swift */,
 				553E8E33209751DA000CC8EE /* LaunchScreen.storyboard */,
 				553E8E31209751DA000CC8EE /* Assets.xcassets */,
+				55A8689320A4949500303F3A /* OverviewController.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -97,6 +106,70 @@
 			isa = PBXGroup;
 			children = (
 				553E8E2C209751D9000CC8EE /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557F380920A1F0E2008A8619 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				557F380A20A1F0FA008A8619 /* Model */,
+				557F380B20A1F100008A8619 /* View */,
+				557F380C20A1F106008A8619 /* Controller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		557F380A20A1F0FA008A8619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557F380B20A1F100008A8619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557F380C20A1F106008A8619 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				557F380D20A1F157008A8619 /* CalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55A8689520A4AFFF00303F3A /* Sermons */ = {
+			isa = PBXGroup;
+			children = (
+				55A8689620A4B00B00303F3A /* Model */,
+				55A8689720A4B01400303F3A /* View */,
+				55A8689820A4B01A00303F3A /* Controller */,
+			);
+			path = Sermons;
+			sourceTree = "<group>";
+		};
+		55A8689620A4B00B00303F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55A8689720A4B01400303F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55A8689820A4B01A00303F3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55A8689920A4B07300303F3A /* SermonsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,7 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				553E8E2D209751D9000CC8EE /* HomeVC.swift in Sources */,
+				55A8689A20A4B07300303F3A /* SermonsVC.swift in Sources */,
 				553E8E2B209751D9000CC8EE /* AppDelegate.swift in Sources */,
+				557F380E20A1F157008A8619 /* CalendarVC.swift in Sources */,
+				55A8689420A4949500303F3A /* OverviewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,10 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
-        let mainVC = HomeVC()
-        window?.rootViewController = UINavigationController(rootViewController: mainVC)
-        
+
+        window?.rootViewController = OverviewController()
         return true
     }
 
